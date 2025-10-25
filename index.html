@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanya — Premium Handmade Herbal Soap</title>
+  <meta name="description" content="Vanya — Handmade herbal soap with Neem, Turmeric & Aloe Vera. Natural, vegan, and cruelty-free skincare.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2c3.5 0 6 2.5 6 6 0 4-4 8-6 10-2-2-6-6-6-10 0-3.5 2.5-6 6-6z" fill="url(#g)"/>
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop stop-color="#fff" stop-opacity="0.95" offset="0"/>
+                <stop stop-color="#fff" stop-opacity="0.6" offset="1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Vanya</h1>
+          <p>Premium Handmade Herbal Soap</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#why-vanya">Why Vanya</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-card">
+          <div class="eyebrow">Vanya — Pure & Premium</div>
+          <h1 id="hero-title">Nature's luxury, handcrafted.</h1>
+          <p>Our signature herbal soap combines the power of Neem, Turmeric, and Aloe Vera in a natural glycerine base. Clean, nourishing, and gentle — for everyday skincare.</p>
+          <div class="cta">
+            <button class="btn btn-primary" onclick="scrollToSection('product')">Discover Our Soap</button>
+            <button class="btn btn-secondary" onclick="scrollToSection('benefits')">Learn Benefits</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-placeholder">
+            <span>Vanya — Handmade Herbal Soap</span>
+          </div>
+          <p>Free samples with first order. Eco-friendly packaging. Made in small batches.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="product" class="product">
+    <div class="container">
+      <div class="product-content">
+        <div class="product-image">
+          <div class="image-placeholder">
+            <span>Vanya Herbal Soap</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <h2>Vanya Herbal Soap</h2>
+          <div class="tag">All Skin Types</div>
+          <p>Our signature soap combines the therapeutic properties of Neem, Turmeric, and Aloe Vera in a gentle glycerine base. Perfect for daily use to maintain healthy, glowing skin.</p>
+          <div class="price">₹125</div>
+          <div class="product-actions">
+            <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+            <button class="btn btn-outline" onclick="scrollToSection('contact')">Custom Order</button>
+          </div>
+          <div class="ingredients">
+            <h3>Key Ingredients & Benefits</h3>
+            <div class="ingredient-list">
+              <div class="ingredient-item">
+                <div class="ingredient-icon">🌿</div>
+                <div class="ingredient-text">
+                  <h4>Glycerine Soap Base</h4>
+                  <p>Gentle cleansing with natural moisturizing properties</p>
+                </div>
+              </div>
+              <div class="ingredient-item">
+                <div class="ingredient-icon">🍃</div>
+                <div class="ingredient-text">
+                  <h4>Neem Powder</h4>
+                  <p>Antibacterial properties help combat acne and skin infections</p>
+                </div>
+              </div>
+              <div class="ingredient-item">
+                <div class="ingredient-icon">🟡</div>
+                <div class="ingredient-text">
+                  <h4>Turmeric Powder</h4>
+                  <p>Anti-inflammatory and brightening for even skin tone</p>
+                </div>
+              </div>
+              <div class="ingredient-item">
+                <div class="ingredient-icon">🌵</div>
+                <div class="ingredient-text">
+                  <h4>Aloe Vera Gel</h4>
+                  <p>Soothing and hydrating for sensitive or irritated skin</p>
+                </div>
+              </div>
+              <div class="ingredient-item">
+                <div class="ingredient-icon">🌲</div>
+                <div class="ingredient-text">
+                  <h4>Tea Tree Essential Oil</h4>
+                  <p>Natural antiseptic that helps clear blemishes and purify skin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2>Soap Benefits</h2>
+        <p>Experience the therapeutic benefits of our carefully selected ingredients</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>Deep Cleansing</h3>
+          <p>Glycerine base combined with Neem and Tea Tree Oil provides thorough yet gentle cleansing without stripping natural oils.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Acne Control</h3>
+          <p>Neem's antibacterial properties and Tea Tree Oil help combat acne-causing bacteria and reduce breakouts.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Skin Brightening</h3>
+          <p>Turmeric helps even out skin tone and reduce dark spots, giving you a naturally radiant complexion.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Soothing & Hydrating</h3>
+          <p>Aloe Vera gel provides intense hydration and soothes irritation, perfect for sensitive skin types.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Anti-inflammatory</h3>
+          <p>Both Turmeric and Aloe Vera have natural anti-inflammatory properties that calm redness and swelling.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Natural Protection</h3>
+          <p>The combination of ingredients creates a protective barrier against environmental pollutants and skin damage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Vanya Section -->
+  <section id="why-vanya" class="why-vanya">
+    <div class="container">
+      <div class="why-vanya-content">
+        <div class="why-vanya-text">
+          <h2>Why Choose Vanya?</h2>
+          <p>We combine traditional herbal knowledge with gentle, modern formulations. No harsh chemicals. Vegan-friendly. Cruelty-free.</p>
+          <div class="why-vanya-list">
+            <div class="why-vanya-item">
+              <div class="why-vanya-icon">🌱</div>
+              <div>
+                <h4>Natural Base</h4>
+                <p>Glycerine soap base for gentle cleansing and moisture retention.</p>
+              </div>
+            </div>
+            <div class="why-vanya-item">
+              <div class="why-vanya-icon">🔬</div>
+              <div>
+                <h4>Carefully Sourced Herbs</h4>
+                <p>Neem, turmeric and fresh aloe extracts for specific skin benefits.</p>
+              </div>
+            </div>
+            <div class="why-vanya-item">
+              <div class="why-vanya-icon">📦</div>
+              <div>
+                <h4>Eco Packaging</h4>
+                <p>Recyclable boxes and paper wrapping; no plastic microbeads.</p>
+              </div>
+            </div>
+            <div class="why-vanya-item">
+              <div class="why-vanya-icon">✨</div>
+              <div>
+                <h4>Small Batches</h4>
+                <p>Handcrafted in small quantities to ensure quality and freshness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-vanya-image">
+          <div class="image-placeholder">
+            <span>Handcrafted with Care</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Contact us for orders or any questions about our products</p>
+      </div>
+      <div class="contact-content">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message / Order Details</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h3>Other Ways to Reach Us</h3>
+          <div class="contact-methods">
+            <a href="https://wa.me/" class="contact-method" target="_blank" rel="noopener">
+              <span class="icon">💬</span>
+              <span>WhatsApp</span>
+            </a>
+            <a href="mailto:info@vanyasoaps.com" class="contact-method">
+              <span class="icon">✉️</span>
+              <span>Email</span>
+            </a>
+            <a href="tel:+911234567890" class="contact-method">
+              <span class="icon">📞</span>
+              <span>Phone</span>
+            </a>
+          </div>
+          <div class="business-info">
+            <h4>Business Hours</h4>
+            <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Vanya</h3>
+          <p>Premium Handmade Herbal Soap</p>
+          <p>Small-batch • Eco-friendly • Cruelty-free</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#why-vanya">Why Vanya</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to our newsletter for new product launches and special offers</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Vanya Handmade Soaps. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
